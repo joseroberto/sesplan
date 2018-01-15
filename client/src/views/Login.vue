@@ -3,8 +3,8 @@
  		<!-- BACKGROUND IMAGE -->
 		<!--===================================================-->
 		<div id="bg-overlay" class="bg-img" style="background-image: url(/static/img/bg-img-3.jpg)"></div>
-		
-		
+
+
 		<!-- LOGIN FORM -->
 		<!--===================================================-->
 		<div class="cls-content">
@@ -28,11 +28,11 @@
 		                <button class="btn btn-primary btn-lg btn-block" type="submit" @click="onLogin">Sign In</button>
 		            </form>
 		        </div>
-		
+
 		        <div class="pad-all">
 		            <a href="#" class="btn-link mar-rgt">Forgot password ?</a>
 		            <a href="#" class="btn-link mar-lft">Create a new account</a>
-		
+
 		            <div class="media pad-top bord-top">
 		                <div class="pull-right">
 		                    <a href="#" class="pad-rgt"><i class="psi-facebook icon-lg text-primary"></i></a>
@@ -46,17 +46,16 @@
 		        </div>
 		    </div>
 		</div>
-		<!--===================================================-->   
+		<!--===================================================-->
     </div>
 </template>
 <script>
 export default {
 	methods: {
 		onLogin: function(){
-			console.log('click');
-			this.$router.push({name: 'form'}); 
+			this.$router.push('dashboard');
 		}
 	}
-    
+
 }
 </script>
